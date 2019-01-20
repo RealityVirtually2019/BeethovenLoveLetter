@@ -6,6 +6,7 @@ public class ChildScript : MonoBehaviour {
     private AnimationOn script;
     Renderer Mesh;
     private float timer = 0;
+    public bool NewTrigger = false;
 	// Use this for initialization
 	void Start () {
         script = transform.parent.gameObject.GetComponent<AnimationOn>();
@@ -16,6 +17,7 @@ public class ChildScript : MonoBehaviour {
 	void Update () {
 		if(script.trigger == true )
         {
+            NewTrigger = true;
             timer += Time.deltaTime;
         }
         if(timer > 5.0f)
