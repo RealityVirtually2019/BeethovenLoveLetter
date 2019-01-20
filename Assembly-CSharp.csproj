@@ -56,7 +56,9 @@
      <Compile Include="Assets\Assets\Scripts\ChildScript.cs" />
      <Compile Include="Assets\Assets\Scripts\ChildScriptOff.cs" />
      <Compile Include="Assets\Assets\Scripts\LetterAnimOff.cs" />
+     <Compile Include="Assets\Assets\Scripts\Looping.cs" />
      <Compile Include="Assets\Assets\Scripts\NotesAnim.cs" />
+     <Compile Include="Assets\Assets\Scripts\Timer.cs" />
      <Compile Include="Assets\Fabulous_trees\ground\scripts\WaterfallTextures.cs" />
      <Compile Include="Assets\Glowing_Forest\Scripts\WaterGroup.cs" />
      <Compile Include="Assets\Oculus\Avatar\Samples\GripPoses\Scripts\PoseEditHelper.cs" />
