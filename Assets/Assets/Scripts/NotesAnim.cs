@@ -5,13 +5,19 @@ using UnityEngine;
 public class NotesAnim : MonoBehaviour {
     Animator Anm;
     public AudioClip Clip;
-    private AudioSource source;
+    AudioSource source;
+    BoxCollider size;
+    Renderer mesh;
 
     // Use this for initialization
     void Start()
     {
         Anm = GetComponent<Animator>();
         source = GetComponent<AudioSource>();
+        size = GetComponent<BoxCollider>();
+        mesh = GetComponent<Renderer>();
+        mesh.enabled = false;
+
         Anm.enabled = false;
     }
 
@@ -22,15 +28,18 @@ public class NotesAnim : MonoBehaviour {
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (Anm.enabled == false)
+        Anm.enabled = true;
+        size.size = new Vector3(0.05f, .2f, -0.04f);
+        mesh.enabled = true;
+        if (Anm.enabled == true)
         {
-            Anm.enabled = true;
+            
             source.Play();
+            
+            
             Debug.Log("print");
         }
-        else
-        {
-            source.Play();
-        }
+
+
     }
 }
