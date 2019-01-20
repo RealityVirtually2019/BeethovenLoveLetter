@@ -7,7 +7,7 @@ public class AnimationOn : MonoBehaviour {
     // Use this for initialization
     void Start () {
         Anm = GetComponent<Animator>();
-        //Anm.enabled = false;
+        Anm.enabled = false;
     }
 	
 	// Update is called once per frame
@@ -18,6 +18,6 @@ public class AnimationOn : MonoBehaviour {
     {
 
         Anm.enabled = true;
-
+       Debug.Log("print");
     }
 }

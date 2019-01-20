@@ -14,7 +14,7 @@ public class LetterAnimOff : MonoBehaviour {
 	}
     private void OnTriggerEnter(Collider other)
     {
-
+        Debug.Log("any");
         Anm.enabled = false;
    
     }
