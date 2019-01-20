@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class LetterAnimOff : MonoBehaviour {
     Animator Anm;
+  
+    public bool trigger = false;
 	void Start () {
         Anm = GetComponent<Animator>();
+ 
 	}
 	
 	// Update is called once per frame
@@ -16,6 +19,8 @@ public class LetterAnimOff : MonoBehaviour {
     {
         Debug.Log("any");
         Anm.enabled = false;
+        
+        trigger = true;
    
     }
 }

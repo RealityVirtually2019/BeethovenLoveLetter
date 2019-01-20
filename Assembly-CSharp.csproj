@@ -53,6 +53,8 @@
   <ItemGroup>
      <Compile Include="Assets\Assets\Scripts\AnimationControl.cs" />
      <Compile Include="Assets\Assets\Scripts\AnimationOn.cs" />
+     <Compile Include="Assets\Assets\Scripts\ChildScript.cs" />
+     <Compile Include="Assets\Assets\Scripts\ChildScriptOff.cs" />
      <Compile Include="Assets\Assets\Scripts\LetterAnimOff.cs" />
      <Compile Include="Assets\Assets\Scripts\NotesAnim.cs" />
      <Compile Include="Assets\Fabulous_trees\ground\scripts\WaterfallTextures.cs" />

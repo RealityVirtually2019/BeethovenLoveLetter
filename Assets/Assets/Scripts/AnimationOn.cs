@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class AnimationOn : MonoBehaviour {
     Animator Anm;
+    public bool trigger = false;
     // Use this for initialization
     void Start () {
         Anm = GetComponent<Animator>();
@@ -18,6 +19,7 @@ public class AnimationOn : MonoBehaviour {
     {
 
         Anm.enabled = true;
+        trigger = true;
        Debug.Log("print");
     }
 }
